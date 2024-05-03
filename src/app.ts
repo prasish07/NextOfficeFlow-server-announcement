@@ -7,6 +7,7 @@ import router from "./routes/index.js";
 import { config } from "./config/config.js";
 import helmet from "helmet";
 import cors from "cors";
+import cookieParser from "cookie-parser";
 
 const app = express();
 
@@ -27,9 +28,10 @@ app.use(
 // middlewares
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(cookieParser(config.jwt.secret));
 
 // routes
-app.use("/api/v1", router);
+app.use(router);
 
 // not found
 app.use(notFound);
