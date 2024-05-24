@@ -13,6 +13,10 @@ import {
 
 const router = Router();
 
+router.get("/", (req, res) => {
+	res.send("You have entered nextofficeflow announcement server");
+});
+
 router
 	.route("/")
 	.post(validateToken, authorizePermission("admin", "HR"), createAnnouncement)
