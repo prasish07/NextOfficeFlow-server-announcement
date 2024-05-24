@@ -13,7 +13,7 @@ import {
 
 const router = Router();
 
-router.get("/", (req, res) => {
+router.get("/about", (req, res) => {
 	res.send("You have entered nextofficeflow announcement server");
 });
 
