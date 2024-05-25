@@ -5,7 +5,7 @@
 **Clone the repository:**
 
 ```sh
-git clone https://github.com/prasish07/NextOfficeFlow-Server.git
+git clone https://github.com/prasish07/NextOfficeFlow-server-announcement.git
 cd NextOfficeFlow-Server
 ```
 
